@@ -9,9 +9,9 @@ use Illuminate\Support\Auth;
 
 class ProcedureController extends Controller
 {
-    // public function __construct(){
-    //   $this->middleware('auth',['except' => ['index'] ] );
-    // }
+    public function __construct(){
+      $this->middleware('auth',['except' => ['index'] ] );
+    }
 
     /**
      * Display a listing of the resource.
